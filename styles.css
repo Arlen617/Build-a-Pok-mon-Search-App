@@ -88,7 +88,7 @@ body {
   background-color: var(--screen-color);
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 10%;
   height: 15%;
   justify-content: center;
   width: 100%;
@@ -110,7 +110,7 @@ body {
 }
 
 #search-button img {
-  background-color: red;
+  background-color: var(--body-color);
   border-radius: 50%;
   border: 1px solid black;
   padding: 5%;
