@@ -1,4 +1,4 @@
-# Build-a-Pok-mon-Search-App
+# Build-a-Pokemon-Search-App
 
 this is a freecodecamp assignment
 
