@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arlen Nightshade" />
+    <meta name="description" content="Pokemon Search App" />
+    <link rel="icon" type="image/x-icon" href="icon/icons8-pokemon-48.png" />
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="data-container">
+        <figure id="img-container"><img src="icon/pokeball.png" alt=""></figure>
+        <table class="stats-table">
+          <tr>
+            <th>Name:</th>
+            <td><p id="pokemon-name"></p></td>
+          </tr>
+          <tr>
+            <th>Id:</th>
+            <td><p id="pokemon-id"></p></td>
+          </tr>
+          <tr>
+            <th>Weight:</th>
+            <td><p id="weight"></p></td>
+          </tr>
+
+          <tr>
+            <th>Height:</th>
+            <td><p id="height"></p></td>
+          </tr>
+          <tr>
+            <th>types:</th>
+            <td><div id="types"></div></td>
+          </tr>
+          <tr>
+            <th>HP:</th>
+            <td><p id="hp"></p></td>
+          </tr>
+          <tr>
+            <th>Attack:</th>
+            <td><p id="attack"></p></td>
+          </tr>
+          <tr>
+            <th>Defense:</th>
+            <td><p id="defense"></p></td>
+          </tr>
+          <tr>
+            <th>Special Attack</th>
+            <td><p id="special-attack"></p></td>
+          </tr>
+          <tr>
+            <th>Special Defense</th>
+            <td><p id="special-defense"></p></td>
+          </tr>
+          <tr>
+            <th>Speed</th>
+            <td><p id="speed"></p></td>
+          </tr>
+        </table>
+      </div>
+      <div class="search">
+        <input type="text" id="search-input" required />
+        <button id="search-button">
+          <img src="/icon/search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
