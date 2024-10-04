@@ -28,7 +28,7 @@ body {
   justify-content: center;
   margin: 0 auto 1rem auto;
   max-width: 425px;
-  padding: 3%;
+  padding: 2%;
   width: 100%;
 }
 
@@ -109,9 +109,16 @@ body {
   width: 50%;
 }
 
+#search-button:hover {
+  transform: scale(1.1);
+}
+
 #search-button img {
   background-color: var(--body-color);
   border-radius: 50%;
   border: 1px solid black;
   padding: 5%;
+  width: 40%;
 }
+
+
