@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,13 +8,12 @@
 
 :root {
   --screen-color: #49cce4;
-  --body-color: #e71c2c;
+  --body-color: #ed5564;
   --data-highlight: #67bccb;
 }
 
 html {
   background-color: black;
-  background-color: white;
   height: 100vh;
   overflow: hidden;
   padding: 1%;
@@ -78,11 +79,13 @@ body {
   border: 1px solid var(--screen-color);
   text-align: center;
   width: 50%;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
 }
 
 .search {
   align-items: center;
-  background-color: var(#49cce4);
+  background-color: var(--screen-color);
   display: flex;
   flex-direction: column;
   gap: 5%;
@@ -94,6 +97,10 @@ body {
 #search-input {
   height: 40%;
   width: 100%;
+  background-color: var(--screen-color);
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding: 2%;
 }
 
 #search-button {
@@ -106,6 +113,5 @@ body {
   background-color: red;
   border-radius: 50%;
   border: 1px solid black;
-  color: red;
   padding: 5%;
 }

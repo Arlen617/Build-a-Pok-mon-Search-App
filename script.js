@@ -8,7 +8,6 @@ const heightEl = document.getElementById("height");
 function searchPk(search) {
   const regex = /[~!@#$%^&*()_+`\[\];'\,.\/{}:"|<>?\s]/g;
   search = search.replace(regex, "").toLowerCase();
-  console.log(search);
   const url = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/" + search;
   console.log(url);
 
