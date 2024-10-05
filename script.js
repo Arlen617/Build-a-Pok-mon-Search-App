@@ -6,8 +6,12 @@ const weightEl = document.getElementById("weight");
 const heightEl = document.getElementById("height");
 
 function searchPk(search) {
-  const regex = /[~!@#$%^&*()_+`\[\];'\,.\/{}:"|<>?\s]/g;
-  search = search.replace(regex, "").toLowerCase();
+  const regex = /[a-z\-0-9]*/g;
+  search = search
+    .split("")
+    .filter((letter) => letter.match(regex))
+    .join("")
+    .toLowerCase();
   const url = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/" + search;
 
   const fetchData = async () => {
@@ -43,8 +47,10 @@ function showData(obj) {
   }
 }
 
-searchInput.addEventListener("change", () => {
-  searchPk(searchInput.value);
+searchInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    searchPk(searchInput.value);
+  }
 });
 
 searchBtn.addEventListener("click", () => {

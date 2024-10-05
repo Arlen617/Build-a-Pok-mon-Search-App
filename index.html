@@ -11,8 +11,20 @@
   </head>
   <body>
     <div class="pokedex">
+      <h1>Pokédex</h1>
+      <div class="search">
+        <input type="text" id="search-input" required />
+        <button id="search-button">
+          <img
+            src="icon/search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+            alt="search icon"
+          />
+        </button>
+      </div>
       <div class="data-container">
-        <figure id="img-container"><img src="icon/pokeball.png" alt="Pokeball"></figure>
+        <figure id="img-container">
+          <img src="icon/pokeball.png" alt="Pokeball" />
+        </figure>
         <table class="stats-table">
           <tr>
             <th>Name:</th>
@@ -48,25 +60,20 @@
             <td><p id="defense"></p></td>
           </tr>
           <tr>
-            <th>Special Attack</th>
+            <th>Special Attack:</th>
             <td><p id="special-attack"></p></td>
           </tr>
           <tr>
-            <th>Special Defense</th>
+            <th>Special Defense:</th>
             <td><p id="special-defense"></p></td>
           </tr>
           <tr>
-            <th>Speed</th>
+            <th>Speed:</th>
             <td><p id="speed"></p></td>
           </tr>
         </table>
       </div>
-      <div class="search">
-        <input type="text" id="search-input" required autofocus/>
-        <button id="search-button">
-          <img src="icon/search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"  alt="search icon"/>
-        </button>
-      </div>
+     
     </div>
     <script src="script.js"></script>
   </body>
